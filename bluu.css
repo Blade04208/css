@@ -1,0 +1,103 @@
+:root {
+  --nine-main: #1a212a;  /*           your main color for nine              */
+  --nine-secondary :#1e2631;  /*      a lighter version of nine-main        */
+  --nine-other: #171d26;  /*          a darker version of nine-main         */
+  --nine-four:#29313c;  /*            even lighter than nine-secondary      */
+}
+/*******************************************
+Side bar
+*******************************************/
+
+.theme-dark .guilds-2JjMmN {
+    background-color: var(--nine-main);
+}
+
+/*******************************************
+channel list 
+*******************************************/
+.container-1NXEtd {
+  background-color: var(--nine-secondary)!important;
+}
+.header-3OsQeK,
+.searchBar-3TnChZ {
+  box-shadow: none;
+}
+
+/*############ user profile menu i forgot #################*/
+.container-YkUktl {
+    background-color: var(--nine-other)!important;
+}
+
+
+/*****************************************
+chat
+*****************************************/
+.chatContent-3KubbW {
+    background-color: var(--nine-main)!important;
+}
+.form-3gdLxP::before { /*why does this exist */
+  background-image: linear-gradient(transparent,var(--nine-main))!important;
+}
+.scrollableContainer-15eg7h {
+  background-color: var(--nine-secondary)!important;
+}
+.attachedBars-2BCP3l {
+  background-color: var(--nine-other);
+}
+.replyBar-1oi75v {
+    background-color: var(--nine-other)!important;
+}
+/*****************************************
+top bar
+*****************************************/
+.title-31SJ6t {
+  background-color: var(--nine-secondary)!important;
+}
+.children-3xh0VB::after {
+  background-image: linear-gradient(to right,transparent,var(--nine-secondary))!important;
+}
+.chatHeaderBar-31g1mU {
+  background-color: var(--nine-other);
+}
+/*****************************************
+server members
+*****************************************/
+.members-3WRCEx {
+  background-color: var(--nine-secondary)!important;
+}
+.member-48YF_l {
+  border-radius: 40px!important;
+  background-color: var(--nine-secondary);
+}
+/*****************************************
+user profile
+*****************************************/
+.userProfileInnerThemedNonPremium-2AJg-H {
+  background-image: none;
+  background-color: var(--nine-four)!important;
+}
+/*****************************************
+settings
+*****************************************/
+
+.sidebarRegionScroller-FXiQOh {
+  background-color: var(--nine-other)!important;
+}
+.contentRegionScroller-2_GT_N {
+  background-color: var(--nine-secondary)!important;
+}
+
+/*****************************************
+snippets by me
+*****************************************/
+.botTag-7aX5WZ:not(.botTagOP-3pUTXu) {
+    color: var(--brand-560);
+    background-color: var(--brand-260);
+    height: 0.9375rem;
+    padding: 0 0.275rem;
+    border-radius: 0.4rem;
+    margin-top: 0.25em;
+}
+.botTag-7aX5WZ.botTagCozy-3NTBvK:not(.botTagOP-3pUTXu) {
+    margin-left: 0.25rem;
+}
