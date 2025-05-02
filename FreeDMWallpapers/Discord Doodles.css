@@ -1,0 +1,16 @@
+@import url(https://blade04208.github.io/css/FreeDMWallpapers/_common.css);
+
+.chat_f75fb0:has(.subtitleContainer_f75fb0 .avatar__44b0c[src*="1124341362955919371"]) .chatContent_f75fb0 {
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://cdn.discordapp.com/assets/content/752072dd0666ec8e67efa96cda178a5a3920724da10512fcde5f32d7ff19474e.webp");
+        opacity: 0.5;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

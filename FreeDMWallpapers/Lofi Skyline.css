@@ -1,6 +1,6 @@
 @import url(https://blade04208.github.io/css/FreeDMWallpapers/_common.css);
 
-.chat_f75fb0:has(.avatar__44b0c[src*="786127059020808192"]) .chatContent_f75fb0 {
+.chat_f75fb0:has(.subtitleContainer_f75fb0 .avatar__44b0c[src*="1124341362955919371"]) .chatContent_f75fb0 {
     --theme-base-color-dark-hsl: 244.61538461538458 100% 5.098039215686274%;
     --theme-base-color-dark: rgb(2, 0, 26) !important;
     --theme-text-color-dark: rgb(160, 153, 255) !important;

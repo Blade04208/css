@@ -1,0 +1,30 @@
+@import url(https://blade04208.github.io/css/FreeDMWallpapers/_common.css);
+
+.chat_f75fb0:has(.subtitleContainer_f75fb0 .avatar__44b0c[src*="1124341362955919371"]) .chatContent_f75fb0 {
+    --theme-base-color-light-hsl: 243.52941176470586 100% 90%;
+    --theme-base-color-light: rgb(207, 204, 255);
+    --theme-text-color-light: rgb(9, 0, 128);
+    --theme-base-color-dark-hsl: 244.61538461538458 100% 5.098039215686274%;
+    --theme-base-color-dark: rgb(2, 0, 26);
+    --theme-text-color-dark: rgb(160, 153, 255);
+    --theme-base-color-amount: 100%;
+    --theme-text-color-amount: 100%;
+    --bg-overlay-selected: unset;
+    --bg-overlay-hover: unset;
+    --bg-overlay-active: unset;
+    --mention-foreground: #b86eff;
+    --text-link: #b86eff;
+    --text-link-low-saturation: #b86eff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://cdn.discordapp.com/assets/content/af25e9ab71496f7f52a9acbe1211bb28efe506d0232ce0b4c97f8d23058e4af4.webp");
+        opacity: 0.5;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
