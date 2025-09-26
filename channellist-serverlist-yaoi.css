@@ -46,7 +46,7 @@
     top: var(--custom-app-top-bar-height);
     position: fixed;
     width: var(--custom-guild-sidebar-width);
-    z-index: 200;
+    z-index: 10;
     background: var(--background-base-lowest);
     border-top: 1px solid var(--app-border-frame);
     overflow: hidden;
