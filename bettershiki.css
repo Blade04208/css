@@ -1,0 +1,108 @@
+
+.vc-shiki-root {
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: var(--radius-xs);
+    background: color-mix(in srgb, var(--background-base-lowest), transparent 50%) !important;
+    color: var(--text-default) !important;
+}
+
+.vc-shiki-lang {
+    top: -26px;
+    right: 26px;
+    color: transparent;
+    position: absolute;
+    background: transparent;
+    padding: var(--space-xxs) var(--radius-xs);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+
+    &:hover {
+        color: var(--text-default);
+        background: var(--background-base-low);
+        border-color: var(--border-subtle);
+    }
+}
+
+.vc-shiki-devicon {
+    position: absolute;
+    bottom: -24px;
+    left: 25%;
+}
+
+.vc-shiki-code,
+.vc-shiki-container {
+    overflow: visible !important;
+}
+
+.vc-shiki-table>.vc-shiki-table-row:first-of-type .vc-shiki-table-cell {
+    padding-right: 22px;
+}
+
+.vc-shiki-btns {
+    top: 6px;
+    right: 7px;
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.vc-shiki-btn {
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    border-radius: var(--radius-xs) !important;
+    font-size: 0px;
+    background: transparent !important;
+    color: var(--brand-300) !important;
+
+    &::after {
+        position: relative;
+        top: -11px;
+        left: -3px;
+        content: "⎘";
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: color-mix(in srgb, var(--brand-500), transparent 75%) !important;
+
+        &::before {
+            position: absolute;
+            top: -30px;
+            right: -6px;
+            content: "Copy";
+            font-size: 13px;
+            padding: var(--space-xxs) var(--radius-xs);
+            border-radius: var(--radius-sm);
+            color: var(--text-default);
+            background: var(--background-base-low);
+            border: 1px solid var(--border-subtle);
+        }
+    }
+
+    &:focus {
+        background: color-mix(in srgb, var(--brand-500), transparent 90%) !important;
+        color: var(--brand-500) !important;
+
+        &::after {
+            content: "⎗";
+        }
+
+        &::before {
+            position: absolute;
+            top: -30px;
+            right: -14px;
+            content: "Copied!";
+            font-size: 13px;
+            padding: var(--space-xxs) var(--radius-xs);
+            border-radius: var(--radius-sm);
+            color: var(--text-default);
+            background: var(--background-base-low);
+            border: 1px solid var(--border-subtle);
+        }
+    }
+}
+
+.messageContent_c19a55, .textContainer__4d95d {
+    overflow: visible!important;
+}
