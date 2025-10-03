@@ -74,7 +74,7 @@
         box-sizing: border-box;
 
 
-        .hiddenVisually__27f77 {
+        .hiddenVisually__b18fe2 {
             display: block;
             clip: unset !important;
             height: fit-content;
@@ -288,7 +288,7 @@
 
 
 .listItem__650eb:has(.item__58105) {
-    .wrapper__6e9f8 .hiddenVisually__27f77, .folderHeader__48112::after {
+    .wrapper__6e9f8 .hiddenVisually__b18fe2, .folderHeader__48112::after {
         color: var(--header-primary);
     }
 }
