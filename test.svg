@@ -1,0 +1,33 @@
+<svg id="effectSvg" class="lEffectSvg" width="800" height="200" viewBox="0 0 1600 400" xmlns="http://www.w3.org/2000/svg">
+
+
+  <filter id="displacementFilter4">
+    <feImage xlink:href="data:image/svg+xml,%3Csvg width='800' height='200' viewBox='0 0 800 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='rgb%280 0 0 %2F6.666666666666667%25%29' /%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='%23FFF' style='filter:blur(2px)' /%3E%3C/svg%3E" x="0%" y="0%" width="100%" height="100%" result="thing9" id="thing9"></feImage>
+    <feImage xlink:href="data:image/svg+xml,%3Csvg width='800' height='200' viewBox='0 0 800 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='rgb%28255 255 255 %2F3.5294117647058827%25%29' style='filter:blur(9px)' /%3E%3C/svg%3E" x="0%" y="0%" width="100%" height="100%" result="thing0" id="thing0"></feImage>
+    <feImage xlink:href="data:image/svg+xml,%3Csvg width='800' height='200' viewBox='0 0 800 200' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='%23000' /%3E%3C/svg%3E" x="0%" y="0%" width="100%" height="100%" result="thing1" id="thing1"></feImage>
+    <feImage xlink:href="data:image/svg+xml,%3Csvg width='800' height='200' viewBox='0 0 800 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='gradient1' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23000'/%3E%3Cstop offset='100%25' stop-color='%2300F'/%3E%3C/linearGradient%3E%3ClinearGradient id='gradient2' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23000'/%3E%3Cstop offset='100%25' stop-color='%230F0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' width='800' height='200' rx='25' fill='%237F7F7F' /%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='%23000' /%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='url(%23gradient1)' style='mix-blend-mode: screen' /%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='url(%23gradient2)' style='mix-blend-mode: screen' /%3E%3Crect x='200' y='50' width='400' height='100' rx='25' fill='rgb%28127 127 127 %2F83.92156862745098%25%29' style='filter:blur(5px)' /%3E%3C/svg%3E" x="0%" y="0%" width="100%" height="100%" result="thing2" id="thing2"></feImage>
+      <feGaussianBlur stdDeviation="0.7" id="preblur" in="SourceGraphic" result="preblur"></feGaussianBlur>
+    <feDisplacementMap id="dispR" in2="thing2" in="preblur" scale="-148" xChannelSelector="B" yChannelSelector="G"></feDisplacementMap>
+      <feColorMatrix type="matrix" values="1 0 0 0 0
+              0 0 0 0 0
+              0 0 0 0 0
+              0 0 0 1 0" result="disp1"></feColorMatrix>
+    <feDisplacementMap id="dispG" in2="thing2" in="preblur" scale="-150" xChannelSelector="B" yChannelSelector="G"></feDisplacementMap>
+      <feColorMatrix type="matrix" values="0 0 0 0 0
+              0 1 0 0 0
+              0 0 0 0 0
+              0 0 0 1 0" result="disp2"></feColorMatrix>
+    <feDisplacementMap id="dispB" in2="thing2" in="preblur" scale="-152" xChannelSelector="B" yChannelSelector="G"></feDisplacementMap>
+      <feColorMatrix type="matrix" values="0 0 0 0 0
+              0 0 0 0 0
+              0 0 1 0 0
+              0 0 0 1 0" result="disp3"></feColorMatrix>
+      <feBlend in2="disp2" mode="screen"></feBlend>
+      <feBlend in2="disp1" mode="screen"></feBlend>
+      <feGaussianBlur stdDeviation="0.8" id="postblur"></feGaussianBlur>
+      <feBlend in2="thing0" mode="screen"></feBlend>
+      <feBlend in2="thing9" mode="multiply"></feBlend>
+      <feComposite in2="thing1" operator="in"></feComposite>
+      <feOffset dx="43" dy="43"></feOffset>
+  </filter>
+</svg>
