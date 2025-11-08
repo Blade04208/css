@@ -37,7 +37,7 @@ section[class^="panels__"] {
         height: auto;
 
         >[class^="wrapper_"]>[class^="container_"] {
-            height: 101px !important;
+            height: 84px !important;
             padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px);
             border-bottom: 1px solid var(--border-faint);
         }
