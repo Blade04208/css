@@ -1,0 +1,141 @@
+/* fuck you ntts */
+
+section[class^="panels__"] {
+    width: calc(var(--custom-guild-list-width) - var(--space-xs) * 2);
+    height: calc(var(--custom-guild-list-width) - var(--space-xs) * 2);
+    display: flex !important;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    border: 1px solid var(--border-subtle);
+    z-index: 20;
+
+    [class^="buttons__"] {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        width: 0px;
+    }
+
+
+    &:has([class*="containerRtcOpened__"]) {
+        background-color: var(--notice-background-positive);
+        border: 1px solid var(--border-normal);
+    }
+
+    >[class^="wrapper_"]>[class^="container_"] {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+        padding: 0px;
+        border-bottom: 0px;
+    }
+
+    &:hover {
+        width: calc(var(--custom-guild-sidebar-width) - var(--space-xs) * 2) !important;
+        height: auto;
+
+        >[class^="wrapper_"]>[class^="container_"] {
+            height: 101px !important;
+            padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px);
+            border-bottom: 1px solid var(--border-faint);
+        }
+
+        [class^="buttons__"] {
+            opacity: 1;
+            pointer-events: all;
+            width: auto;
+        }
+
+        [class*="activityPanel__"] {
+            position: static;
+            border-bottom: 1px solid var(--border-faint);
+
+            [class^="actions__"],
+            [class^="info__"] {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            [class^="gameIcon_"] {
+                scale: 1;
+                transform: none;
+            }
+        }
+
+        #vc-spotify-player {
+            height: 126px !important;
+            padding: 12px;
+
+            #vc-spotify-album-image {
+                scale: 1;
+                border-radius: 3px;
+                transform: none;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &:has([class^="mask__"]>[class^="wrapper"]:hover) {
+        overflow: visible;
+    }
+
+    [class*="activityPanel__"] {
+        background: transparent !important;
+        position: absolute;
+
+        transition: all 0.3s ease;
+        border-bottom: none;
+
+        [class^="actions__"],
+        [class^="info__"] {
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        [class^="gameIcon_"] {
+            scale: 0.7;
+            transition: all 0.3s ease;
+            transform: translate(10px, -20px);
+        }
+    }
+
+    #vc-spotify-player {
+        height: 0px !important;
+        overflow: visible;
+        padding: 0px;
+        border: 0px;
+        transition: all 0.3s ease;
+        z-index: 3;
+
+        #vc-spotify-album-image {
+            scale: 0.5;
+            border-radius: 100px;
+            transform: translate(-16px, 32px);
+        }
+    }
+}
+
+.container__2637a {
+    padding-bottom: 0px !important;
+}
+
+[class^="sidebarList__"]>nav>[class^="scroller__"] {
+    margin-bottom: 0px !important;
+}
+
+:root {
+    --mini-panel-round: false;
+}
+
+@container style(--mini-panel-round: true) {
+    [class^="panels__"] {
+        border-radius: 100px;
+
+        &:hover {
+            border-radius: var(--radius-sm);
+        }
+    }
+}
