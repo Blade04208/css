@@ -1,0 +1,156 @@
+._5e434347c823b592-base {
+    --custom-app-top-bar-height: 0px;
+    anchor-scope: --trailing;
+
+    .c38106a3f0c3ca76-trailing {
+        position: relative;
+        z-index: 101;
+        anchor-name: --trailing;
+        gap: var(--space-xs);
+        background: linear-gradient(to right, transparent 0%, var(--background-base-lower) var(--space-sm));
+        padding-left: 12px;
+        height: 96px;
+    }
+
+    .c38106a3f0c3ca76-trailing>* {
+        translate: 6px 25px;
+
+    }
+
+    .c38106a3f0c3ca76-winButtons {
+        anchor-name: --win-buttons;
+
+        &::before {
+            content: none;
+        }
+
+        .c38106a3f0c3ca76-winButton {
+            width: calc(var(--custom-channel-header-height) / 1.25);
+            height: calc(var(--custom-channel-header-height));
+        }
+
+        .c38106a3f0c3ca76-winButtonClose {
+            padding-right: var(--space-xs);
+        }
+    }
+
+    :has(._9293f6b2fc12398a-toolbar, ._8067953d83f4b8a8-alignedRightContent, ._1a9cebfbd0c9d0f6-headerBarContent, ._495084e7a0006942-toolbar):not(.bfe55a0aaaf62375-videoControls, .cb9592ad77576717-callContainer>*, ._01ae244280823725-chatLayerWrapper) {
+        position: static;
+    }
+
+    .f75fb00fb7356cbe-title ._9293f6b2fc12398a-toolbar,
+    ._8067953d83f4b8a8-alignedRightContent,
+    ._1a9cebfbd0c9d0f6-headerBarContent {
+        position: absolute;
+        right: calc(anchor-size(--trailing width) + var(--space-xs, 0));
+        background: linear-gradient(to right, transparent 0%, var(--background-base-lower) var(--space-sm));
+        padding: 0px 0px 0px 12px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: var(--background-base-lower);
+            width: 100vw;
+            height: var(--custom-channel-header-height);
+            z-index: 20;
+            top: -9px;
+            left: 100%;
+        }
+    }
+
+    ._8067953d83f4b8a8-alignedRightContent {
+        margin-right: calc(0px - var(--space-xxl) * 1.5);
+    }
+
+    ._1a9cebfbd0c9d0f6-headerBarContent,
+    ._9293f6b2fc12398a-toolbar {
+        margin-right: calc(0px - var(--space-md) / 1.25);
+        height: calc(var(--custom-channel-header-height) - 2.5px);
+        top: 2.5px;
+    }
+
+    ._133bf5eea8e33a34-inviteToolbar {
+        padding-right: 0px;
+    }
+
+    ._5e434347c823b592-page>div>div[style^="min-width:"] {
+        display: none;
+    }
+
+    ._01ae244280823725-chatLayerWrapper ._9293f6b2fc12398a-container ._9293f6b2fc12398a-toolbar {
+        order: -1;
+        flex-direction: row-reverse;
+        padding: 0px var(--space-lg) 0px 0px;
+        margin-left: calc(0px - var(--space-xs));
+    }
+}
+
+._495084e7a0006942-toolbar {
+ position: absolute;
+ margin-top: 48px;
+ right: var(--space-md);
+ >div>._201d5e8a3c09670a-button::before {
+    content: "yes i moved the chat button below the titlebar what are you gonna do about it";
+    max-width: calc(100vw - var(--custom-guild-sidebar-width));
+    font-size: 12px;
+    opacity: 0.25;
+    padding-right: 8px;
+ }
+}
+
+._59d0d7075b521375-layerContainer:has(>._01ae244280823725-chatLayerWrapper) {
+    z-index: 100;
+}
+
+.c38106a3f0c3ca76-systemBar {
+    .c38106a3f0c3ca76-winButton {
+        width: calc(var(--custom-channel-header-height) / 1.25);
+        height: calc(var(--custom-channel-header-height));
+    }
+}
+
+
+.d3a6f0de39ff36e9-carouselModal {
+    margin-top: var(--custom-channel-header-height);
+}
+
+._9293f6b2fc12398a-upperContainer ._9293f6b2fc12398a-toolbar ._496769951eb140fe-search {
+    /* Re-Iconify Search */
+    order: -1;
+
+    ._974928fe84ca9647-searchBar {
+        /* Make the default state only show an icon that can be clicked. */
+        transition: all ease 0.3s;
+        width: 25px;
+        box-sizing: unset;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+
+        ._974928fe84ca9647-icon {
+            height: 32px;
+            width: 32px;
+            scale: 1.2;
+            cursor: pointer;
+        }
+    }
+
+    ._974928fe84ca9647-focused ._974928fe84ca9647-searchBar,
+    ._974928fe84ca9647-open ._974928fe84ca9647-searchBar {
+        /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
+        width: 225px;
+        box-sizing: border-box;
+        cursor: text;
+        background: var(--background-gradient-low, var(--input-background));
+        border: 1px solid var(--input-border);
+        padding: 2px 0;
+
+        ._974928fe84ca9647-icon {
+            height: 24px;
+            width: 24px;
+            scale: 1;
+            cursor: pointer;
+        }
+    }
+}
