@@ -1,4 +1,4 @@
-.navScroller__409aa {
+._409aa1aeee28d5f7-navScroller {
     position: absolute;
     z-index: 1;
     justify-self: center;
@@ -10,7 +10,7 @@
     top: calc(var(--space-xxs) * 1.5);
     pointer-events: none;
 
-    .nav__409aa {
+    ._409aa1aeee28d5f7-nav {
         flex-direction: row;
     }
 
@@ -23,7 +23,7 @@ width: 100%;
 justify-content: center;
             background: linear-gradient(to bottom, transparent,  var(--background-base-low) 25%);
             padding-top: 10px;
-        >.clickable__2debe {
+        >._2debea61131de3de-clickable {
             flex-direction: row;
 
             span {
@@ -31,7 +31,7 @@ justify-content: center;
             }
         }
 
-        >.links__7aac8 {
+        >._7aac80f6cab00c3b-links {
             padding-bottom: var(--space-xxs);
         }
 
@@ -39,19 +39,19 @@ justify-content: center;
 
 }
 
-.sidebar__409aa {
+._409aa1aeee28d5f7-sidebar {
     display: contents;
 
     >* {
         position: absolute;
     }
-        .fixedContent__409aa::after {
+        ._409aa1aeee28d5f7-fixedContent::after {
         display: none;
     }
 }
 
 
-.section__409aa {
+._409aa1aeee28d5f7-section {
     border-bottom: 0px;
     align-items: center;
     align-content: center;
@@ -59,12 +59,12 @@ justify-content: center;
     gap: 0px;
     pointer-events: all !important;
 
-    .itemContainer_caf372 {
+    .caf372efc4d47562-itemContainer {
         display: none;
     }
 
     &:hover {
-        .itemContainer_caf372 {
+        .caf372efc4d47562-itemContainer {
             display: flex;
             width: 100%;
             border-left: 1px solid var(--border-subtle);
@@ -89,12 +89,12 @@ justify-content: center;
 
 
 
-            .item_caf372 {
+            .caf372efc4d47562-item {
                 width: 100%;
             }
         }
 
-        .sectionLabel__409aa {
+        ._409aa1aeee28d5f7-sectionLabel {
             margin: 0px !important;
             overflow: visible;
             background: var(--background-mod-normal);
@@ -111,7 +111,7 @@ justify-content: center;
         }
     }
 
-    .sectionLabel__409aa {
+    ._409aa1aeee28d5f7-sectionLabel {
         overflow: hidden;
         pointer-events: all !important;
 
