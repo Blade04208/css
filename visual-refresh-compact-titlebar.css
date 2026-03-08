@@ -1,8 +1,8 @@
-._5e434347c823b592-base {
+.base__5e434 {
     --custom-app-top-bar-height: 0px;
     anchor-scope: --trailing;
 
-    .c38106a3f0c3ca76-trailing {
+    .trailing_c38106 {
         position: relative;
         z-index: 101;
         anchor-name: --trailing;
@@ -12,35 +12,35 @@
         height: 96px;
     }
 
-    .c38106a3f0c3ca76-trailing>* {
+    .trailing_c38106>* {
         translate: 6px 25px;
 
     }
 
-    .c38106a3f0c3ca76-winButtons {
+    .winButtons_c38106 {
         anchor-name: --win-buttons;
 
         &::before {
             content: none;
         }
 
-        .c38106a3f0c3ca76-winButton {
+        .winButton_c38106 {
             width: calc(var(--custom-channel-header-height) / 1.25);
             height: calc(var(--custom-channel-header-height));
         }
 
-        .c38106a3f0c3ca76-winButtonClose {
+        .winButtonClose_c38106 {
             padding-right: var(--space-xs);
         }
     }
 
-    :has(._9293f6b2fc12398a-toolbar, ._8067953d83f4b8a8-alignedRightContent, ._1a9cebfbd0c9d0f6-headerBarContent, ._495084e7a0006942-toolbar):not(.bfe55a0aaaf62375-videoControls, .cb9592ad77576717-callContainer>*, ._01ae244280823725-chatLayerWrapper) {
+    :has(.toolbar__9293f, .alignedRightContent__80679, .headerBarContent__1a9ce, .toolbar__49508):not(.videoControls_bfe55a, .callContainer_cb9592>*, .chatLayerWrapper__01ae2) {
         position: static;
     }
 
-    .f75fb00fb7356cbe-title ._9293f6b2fc12398a-toolbar,
-    ._8067953d83f4b8a8-alignedRightContent,
-    ._1a9cebfbd0c9d0f6-headerBarContent {
+    .title_f75fb0 .toolbar__9293f,
+    .alignedRightContent__80679,
+    .headerBarContent__1a9ce {
         position: absolute;
         right: calc(anchor-size(--trailing width) + var(--space-xs, 0));
         background: linear-gradient(to right, transparent 0%, var(--background-base-lower) var(--space-sm));
@@ -58,26 +58,26 @@
         }
     }
 
-    ._8067953d83f4b8a8-alignedRightContent {
+    .alignedRightContent__80679 {
         margin-right: calc(0px - var(--space-xxl) * 1.5);
     }
 
-    ._1a9cebfbd0c9d0f6-headerBarContent,
-    ._9293f6b2fc12398a-toolbar {
+    .headerBarContent__1a9ce,
+    .toolbar__9293f {
         margin-right: calc(0px - var(--space-md) / 1.25);
         height: calc(var(--custom-channel-header-height) - 2.5px);
         top: 2.5px;
     }
 
-    ._133bf5eea8e33a34-inviteToolbar {
+    .inviteToolbar__133bf {
         padding-right: 0px;
     }
 
-    ._5e434347c823b592-page>div>div[style^="min-width:"] {
+    .page__5e434>div>div[style^="min-width:"] {
         display: none;
     }
 
-    ._01ae244280823725-chatLayerWrapper ._9293f6b2fc12398a-container ._9293f6b2fc12398a-toolbar {
+    .chatLayerWrapper__01ae2 .container__9293f .toolbar__9293f {
         order: -1;
         flex-direction: row-reverse;
         padding: 0px var(--space-lg) 0px 0px;
@@ -85,11 +85,11 @@
     }
 }
 
-._495084e7a0006942-toolbar {
+.toolbar__49508 {
  position: absolute;
  margin-top: 48px;
  right: var(--space-md);
- >div>._201d5e8a3c09670a-button::before {
+ >div>.button__201d5::before {
     content: "yes i moved the chat button below the titlebar what are you gonna do about it";
     max-width: calc(100vw - var(--custom-guild-sidebar-width));
     font-size: 12px;
@@ -98,27 +98,27 @@
  }
 }
 
-._59d0d7075b521375-layerContainer:has(>._01ae244280823725-chatLayerWrapper) {
+.layerContainer__59d0d:has(>.chatLayerWrapper__01ae2) {
     z-index: 100;
 }
 
-.c38106a3f0c3ca76-systemBar {
-    .c38106a3f0c3ca76-winButton {
+.systemBar_c38106 {
+    .winButton_c38106 {
         width: calc(var(--custom-channel-header-height) / 1.25);
         height: calc(var(--custom-channel-header-height));
     }
 }
 
 
-.d3a6f0de39ff36e9-carouselModal {
+.carouselModal_d3a6f0 {
     margin-top: var(--custom-channel-header-height);
 }
 
-._9293f6b2fc12398a-upperContainer ._9293f6b2fc12398a-toolbar ._496769951eb140fe-search {
+.upperContainer__9293f .toolbar__9293f .search__49676 {
     /* Re-Iconify Search */
     order: -1;
 
-    ._974928fe84ca9647-searchBar {
+    .searchBar__97492 {
         /* Make the default state only show an icon that can be clicked. */
         transition: all ease 0.3s;
         width: 25px;
@@ -128,7 +128,7 @@
         border: none;
         padding: 0;
 
-        ._974928fe84ca9647-icon {
+        .icon__97492 {
             height: 32px;
             width: 32px;
             scale: 1.2;
@@ -136,8 +136,8 @@
         }
     }
 
-    ._974928fe84ca9647-focused ._974928fe84ca9647-searchBar,
-    ._974928fe84ca9647-open ._974928fe84ca9647-searchBar {
+    .focused__97492 .searchBar__97492,
+    .open__97492 .searchBar__97492 {
         /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
         width: 225px;
         box-sizing: border-box;
@@ -146,7 +146,7 @@
         border: 1px solid var(--input-border);
         padding: 2px 0;
 
-        ._974928fe84ca9647-icon {
+        .icon__97492 {
             height: 24px;
             width: 24px;
             scale: 1;
