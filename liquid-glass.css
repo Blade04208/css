@@ -1,0 +1,141 @@
+.channelTextArea_f75fb0 {
+        background: rgb(255 255 255 / var(--shine-glass-tint));
+        background-blend-mode: plus-lighter;
+}
+
+.themedBackground__74017 {
+        border-radius: var(--shine-glass-radius);
+        background: transparent !important;
+
+}
+
+.chatContent_f75fb0 {
+        justify-content: end;
+        justify-items: end;
+}
+
+.form_f75fb0 {
+        margin-top: -80px;
+}
+
+.messagesWrapper__36d07 {
+
+        >.scroller__36d07 .scrollerInner__36d07,
+        .jumpToPresentBar__0f481 {
+                margin-bottom: 64px;
+        }
+
+        .chatGradient__36d07 {
+                display: none;
+        }
+
+        mask-image: linear-gradient(to top, transparent, black 40px);
+}
+
+.channelBottomBarArea_f75fb0,
+.container_f37cb1 {
+        z-index: 200;
+}
+
+.typing_b88801 {
+        z-index: 1;
+}
+
+:root {
+        /* glass controls */
+        --shine-glass-width: 100%;
+        --shine-glass-height: auto;
+        --shine-glass-darkness-opacity: 0;
+        --shine-glass-darkness-blur: 5px;
+        --shine-glass-lightness-opacity: 0.3;
+        --shine-glass-lightness-blur: 1px;
+        --shine-glass-pre-blur: 0px;
+        --shine-glass-post-blur: 1px;
+        --shine-glass-tint: 0.04;
+        /* do not modify these, they will have no effect, this is only for the script to make the svg */
+        --shine-glass-radius: 26px;
+        --shine-glass-distortion: 20;
+        --shine-glass-center-distortion: 0;
+        --shine-glass-center-size: 16;
+        --shine-glass-iridescence: 10;
+        --shine-glass-rim-width: 12px;
+        /* the svg */
+        --liquid-glass-filter: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cfilter%20id%3D%22liquid-glass%22%20filterUnits%3D%22objectBoundingBox%22%20primitiveUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%221%22%20height%3D%221%22%20color-interpolation-filters%3D%22sRGB%22%3E%3CfeImage%20xlink%3Ahref%3D%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%253E%253Cdefs%253E%253ClinearGradient%2520id%253D%2522x%2522%253E%253Cstop%2520stop-color%253D%2522%2523000%2522%2520%252F%253E%253Cstop%2520offset%253D%25221%2522%2520stop-color%253D%2522%252300f%2522%2520%252F%253E%253C%252FlinearGradient%253E%253ClinearGradient%2520id%253D%2522y%2522%2520x2%253D%25220%2522%2520y2%253D%25221%2522%253E%253Cstop%2520stop-color%253D%2522%2523000%2522%2520%252F%253E%253Cstop%2520offset%253D%25221%2522%2520stop-color%253D%2522%25230f0%2522%2520%252F%253E%253C%252FlinearGradient%253E%253CclipPath%2520id%253D%2522outline%2522%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520rx%253D%25228%2522%2520%252F%253E%253C%252FclipPath%253E%253Cfilter%2520id%253D%2522soften%2522%2520x%253D%2522-50%2525%2522%2520y%253D%2522-100%2525%2522%2520width%253D%2522200%2525%2522%2520height%253D%2522300%2525%2522%253E%253CfeGaussianBlur%2520stdDeviation%253D%25224%2522%2520%252F%253E%253C%252Ffilter%253E%253C%252Fdefs%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520fill%253D%2522%2523808080%2522%2520%252F%253E%253Cg%2520clip-path%253D%2522url%2528%2523outline%2529%2522%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520fill%253D%2522url%2528%2523x%2529%2522%2520%252F%253E%253Crect%2520width%253D%2522100%2525%2522%2520height%253D%2522100%2525%2522%2520fill%253D%2522url%2528%2523y%2529%2522%2520style%253D%2522mix-blend-mode%253Ascreen%2522%2520%252F%253E%253Crect%2520x%253D%252212%2522%2520y%253D%252212%2522%2520rx%253D%25220%2522%2520style%253D%2522width%253Acalc%2528100%2525%2520-%252024px%2529%253Bheight%253Acalc%2528100%2525%2520-%252024px%2529%2522%2520fill%253D%2522%2523808080%2522%2520filter%253D%2522url%2528%2523soften%2529%2522%2520fill-opacity%253D%25221%2522%2520%252F%253E%253C%252Fg%253E%253C%252Fsvg%253E%22%20preserveAspectRatio%3D%22none%22%20result%3D%22map%22%20%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22map%22%20scale%3D%22-19%22%20xChannelSelector%3D%22B%22%20yChannelSelector%3D%22G%22%20%2F%3E%3CfeColorMatrix%20values%3D%221%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20result%3D%22red%22%20%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22map%22%20scale%3D%22-20%22%20xChannelSelector%3D%22B%22%20yChannelSelector%3D%22G%22%20%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%201%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20result%3D%22green%22%20%2F%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20in2%3D%22map%22%20scale%3D%22-21%22%20xChannelSelector%3D%22B%22%20yChannelSelector%3D%22G%22%20%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%201%200%200%200%200%200%201%200%22%20result%3D%22blue%22%20%2F%3E%3CfeBlend%20in%3D%22blue%22%20in2%3D%22green%22%20mode%3D%22screen%22%20%2F%3E%3CfeBlend%20in2%3D%22red%22%20mode%3D%22screen%22%20%2F%3E%3CfeOffset%20dx%3D%220.0392156862745%22%20dy%3D%220.0392156862745%22%20%2F%3E%3C%2Ffilter%3E%3C%2Fsvg%3E#liquid-glass");
+}
+
+
+.channelTextArea_f75fb0,
+.newMessagesBar__0f481,
+.bannerButton_fb7f94,
+.jumpToPresentBar__0f481,
+.title_f75fb0,
+.searchBar_e6b769,
+.panels__5e434,
+.wrapper__44df5,
+.container_f37cb1 {
+        backdrop-filter: blur(var(--shine-glass-pre-blur)) var(--liquid-glass-filter) blur(var(--shine-glass-post-blur));
+}
+
+.newMessagesBar__0f481 {
+        background: color-mix(in oklab, var(--brand-500), transparent 25%);
+}
+
+.subtitleContainer_f75fb0 {
+        position: absolute;
+        width: 100%;
+        height: 49px;
+        inset: 0;
+        background: transparent;
+}
+
+.container_c8ffbb,
+.scroller__99e7c {
+        padding-top: 49px;
+}
+
+.scroller__99e7c {
+        margin-bottom: 0px;
+        padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 16px);
+}
+
+.guilds__5e434 {
+        margin-bottom: 0px;
+
+        mask: none;
+}
+
+.tree_ef3116>.scroller_ef3116 {
+        padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 16px) !important;
+}
+
+.unreadMentionsIndicatorBottom_ef3116 {
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 16px);
+}
+
+.container__2637a {
+        padding-bottom: 0px;
+
+        .scroller__629e4 {
+                padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) + 16px) !important;
+                margin-top: -49px;
+                padding-top: 49px;
+        }
+}
+
+.title_f75fb0,
+.searchBar_e6b769,
+.panels__5e434,
+.wrapper__44df5, .jumpToPresentBar__0f481 {
+        background: rgb(255 255 255 / var(--shine-glass-tint)) !important;
+        background-blend-mode: plus-lighter;
+}
+
+.searchBar_e6b769 {
+        position: absolute;
+        width: 100%;
+
+}
+
+.newMessagesBar__0f481 {
+        top: 49px;
+}
